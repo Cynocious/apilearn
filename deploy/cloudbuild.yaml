@@ -1,0 +1,15 @@
+# Cloud Build config used by `make build`.
+# Builds the Docker image and pushes it to Artifact Registry.
+# The image path must match the REGISTRY variable in the Makefile.
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - us-central1-docker.pkg.dev/$PROJECT_ID/apilearn/apilearn:$_VERSION
+      - -t
+      - us-central1-docker.pkg.dev/$PROJECT_ID/apilearn/apilearn:latest
+      - .
+images:
+  - us-central1-docker.pkg.dev/$PROJECT_ID/apilearn/apilearn:$_VERSION
+  - us-central1-docker.pkg.dev/$PROJECT_ID/apilearn/apilearn:latest

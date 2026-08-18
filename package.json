@@ -1,0 +1,27 @@
+{
+  "name": "apilearn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Cynocious@github.com/Cynocious/apilearn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Cynocious/apilearn/issues"
+  },
+  "homepage": "https://github.com/Cynocious/apilearn#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "firebase-admin": "^14.2.0",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
